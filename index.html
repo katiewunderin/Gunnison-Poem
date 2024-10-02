@@ -3,12 +3,13 @@
   <head>
     <title>SheCodes</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>AI Poem Generator </title>
   </head>
 
 
 <body>
+    <div class="container">
     <header>
         <h1>📃 A.I. Poem Generator 📃</h1>
 
@@ -21,10 +22,12 @@
                 autofocus 
                 required 
                 autocomplete="off" 
+                class="prompt"
             />
-            <input type="submit" />
+            <input type="submit" class="submit"/>
         </form>
-        <div id="poem">
+        <br />
+        <div class="poem">
             Poem will go here
             <br />
             Poem will go here 
@@ -34,14 +37,15 @@
         </div>
     </main>
 
-<footer>This A.I. was coded by 👻  Katie Lunder & is open-sourced on <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/908/original/github-desktop.jpg?1727834157" alt="Git" class="logo" width="20px"> 
-    <a href="https://github.com/katiewunderin/Gunnison-Poem" target="_blank">Github</a></a>
-      and is hosted on 
-      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/909/original/netlify.jpg?1727834169" alt="Netlify" class="logo" width="20px"> <a href="https://github.com/katiewunderin/Gunnison-Poem" target="_blank">  
-  <a href="https://ai-gunnisonpoem.netlify.app/" target="_blank"> Netlify</a></a>.
+    <footer>This A.I. was coded by 👻  Katie Lunder & is open-sourced on <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/908/original/github-desktop.jpg?1727834157" alt="Git" class="logo" width="20px"> 
+        <a href="https://github.com/katiewunderin/Gunnison-Poem" target="_blank">Github</a></a>
+        and is hosted on 
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/909/original/netlify.jpg?1727834169" alt="Netlify" class="logo" width="20px"> <a href="https://github.com/katiewunderin/Gunnison-Poem" target="_blank">  
+    <a href="https://ai-gunnisonpoem.netlify.app/" target="_blank"> Netlify</a></a>.
 
 
-</footer> 
+    </footer> 
+</div>
 
     <script src="src/index.js"></script>
 </body>

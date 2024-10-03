@@ -3,8 +3,10 @@
   <head>
     <title>SheCodes</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width-device-width", inital scale="1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Poem Generator </title>
   </head>
@@ -13,21 +15,23 @@
 <body>
     <div class="container">
         <header>
-            <h1>📃 A.I. Poem Generator 📃</h1>
+            <h1> 🌄 🏞️ A.I. Hiker's Guide 🏞️ 🌄 </h1>
         </header>
         <main>
             <form id="poem-generator-form">
                 <input type="text" 
-                    placeholder="Enter the topic you wish to seek" 
+                    placeholder="Enter a location or 2 you wish to hike..." 
                     autofocus 
                     required 
                     autocomplete="off" 
                     class="instructions"
+                    id="user-instructions"
                 />
                 <input type="submit" class="submit-button"/>
             </form>
             <br />
             <div class="poem" id="poem"></div>
+
         </main>
 
     <footer>This A.I. was coded by 👻  Katie Lunder & is open-sourced on <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/908/original/github-desktop.jpg?1727834157" alt="Git" class="logo" width="20px"> 
@@ -39,7 +43,9 @@
 
     </footer> 
 </div>
-
-    <script src="src/index.js"></script>
+    <div id="app">
+        <!-- Your content goes here -->
+    </div>
+    <script type=module src="src/index.js"></script>
 </body>
 </html>

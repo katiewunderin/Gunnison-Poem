@@ -3,39 +3,32 @@
   <head>
     <title>SheCodes</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width", inital scale="1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Poem Generator </title>
   </head>
-
+ 
 
 <body>
     <div class="container">
-    <header>
-        <h1>📃 A.I. Poem Generator 📃</h1>
-
-    </header>
-    <br />
-
-    <main>
-        <form>
-            <input type="text" placeholder="Enter the topic you wish to seek" 
-                autofocus 
-                required 
-                autocomplete="off" 
-                class="prompt"
-            />
-            <input type="submit" class="submit"/>
-        </form>
-        <br />
-        <div class="poem">
-            Poem will go here
+        <header>
+            <h1>📃 A.I. Poem Generator 📃</h1>
+        </header>
+        <main>
+            <form id="poem-generator-form">
+                <input type="text" 
+                    placeholder="Enter the topic you wish to seek" 
+                    autofocus 
+                    required 
+                    autocomplete="off" 
+                    class="instructions"
+                />
+                <input type="submit" class="submit-button"/>
+            </form>
             <br />
-            Poem will go here 
-            <br />
-            Poem will go also 
-            <br />
-        </div>
-    </main>
+            <div class="poem" id="poem"></div>
+        </main>
 
     <footer>This A.I. was coded by 👻  Katie Lunder & is open-sourced on <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/908/original/github-desktop.jpg?1727834157" alt="Git" class="logo" width="20px"> 
         <a href="https://github.com/katiewunderin/Gunnison-Poem" target="_blank">Github</a></a>

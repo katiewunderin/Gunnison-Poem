@@ -8,44 +8,38 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>AI Poem Generator </title>
   </head>
- 
-
-<body>
-    <div class="container">
-        <header>
-            <h1> 🌄 🏞️ A.I. Hiker's Guide 🏞️ 🌄 </h1>
-        </header>
-        <main>
-            <form id="poem-generator-form">
-                <input type="text" 
-                    placeholder="Enter a location or 2 you wish to hike..." 
-                    autofocus 
-                    required 
-                    autocomplete="off" 
-                    class="instructions"
-                    id="user-instructions"
-                />
-                <input type="submit" class="submit-button"/>
-            </form>
-            <br />
-            <div class="poem" id="poem"></div>
-
-        </main>
-
-    <footer>This A.I. was coded by 👻  Katie Lunder & is open-sourced on <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/908/original/github-desktop.jpg?1727834157" alt="Git" class="logo" width="20px"> 
-        <a href="https://github.com/katiewunderin/Gunnison-Poem" target="_blank">Github</a></a>
-        and is hosted on 
-        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/909/original/netlify.jpg?1727834169" alt="Netlify" class="logo" width="20px"> <a href="https://github.com/katiewunderin/Gunnison-Poem" target="_blank">  
-    <a href="https://ai-gunnisonpoem.netlify.app/" target="_blank"> Netlify</a></a>.
-
-
-    </footer> 
-</div>
-    <div id="app">
-        <!-- Your content goes here -->
+  <body>
+    <header>
+      <h1>🌄 🏞️ A.I. Hiker's Guide 🏞️ 🌄</h1>
+    </header>
+    <div class="form-container">
+      <main>
+        <form id="trail-generator-form">
+          <input type="text" 
+            placeholder="Enter a location or 2 you wish to hike..." 
+            autofocus 
+            required 
+            autocomplete="off" 
+            class="instructions"
+            id="user-instructions"
+          />
+          <input type="submit" class="submit-button"/>
+        </form>
+        <small>i.e: Dublin,Ireland. Colorado. Oslo,Norway...</small>
+      </main>
     </div>
-    <script type=module src="src/index.js"></script>
-</body>
+    <div class="trail hidden" id="trail"></div>
+
+    <footer>
+      This A.I. was coded by  <strong>👻 Katie Lunder 👻</strong> & is open-sourced on 
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/146/504/original/git3.png?1728186651" alt="Git" class="logo" width="20px" url="https://github.com/katiewunderin/Gunnison-Poem"> 
+      <a href="https://github.com/katiewunderin/Gunnison-Poem" target="_blank">Github</a>
+      and is hosted on 
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/146/505/original/net4.png?1728186662" alt="Netlify" class="logo" width="20px" url="https://ai-gunnisonpoem.netlify.app/"> 
+      <a href="https://ai-gunnisonpoem.netlify.app/" target="_blank">Netlify</a>.
+    </footer>
+
+    <script src="src/index.js"></script>
+  </body>
 </html>

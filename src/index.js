@@ -49,7 +49,6 @@ function generateTrail(event) {
     
     let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${encodeURIComponent(trailPrompt)}&context=${encodeURIComponent(hikingContext)}&key=${apiKey}`;
 
-    console.log(`Prompt: ${poemPrompt}`);
     let trailElement = document.querySelector("#trail");
     trailElement.innerHTML = `<div class="generating">⏳ Generating a hiking trail for... ${instructionsInput.value}</div>`;
 
